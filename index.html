@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel= "stylesheet" href="stylesheet.css" type="text/css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+        <button type="button" class="navbar-toggle"
+                data-toggle="collapse"
+                data-target=".navbar-collapse">
+                <span class="sr-only">Toggle Nav</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+        </button> <!-- End of Button for collapsed view-->
+        
+        <a href="#" class="navbar-brand">Hennesy</a> <!-- Brand Name-->
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav  navbar-nav navbar-right">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li class=""><a href="#">Contact</a></li>
+                    <li class=""><a href="#">Products</a></li>
+                </ul>
+            
+                
+                    <ul class="dropdown-menu  dropdown-menu-right">
+                     <a href="#" class="data-toggle" data-toggle="dropdown">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Class</a></li>
+                        <li><a href="#">Products</a></li>
+                    </ul>
+            </div>
+        </div>
+    </nav>
+
+<div class='embed-responsive embed-responsive-16by9'>
+<video id="vid" type= "video/mp4" poster = "nas-img.jpg">
+    <source type="video/mp4" src="nas.mp4"></source>
+</video>
+</div>
+
+
+<div id="section1" class = "divider">  
+</div>
+
+<div id = "image1" class = "sect secOne">
+</div>
+
+
+
+
+ <div class="navbar navbar-inverse navbar-static-bottom">
+    <div class="container">
+        <div class="navbar-text pull-right">
+        <p>Copyright Hennesy 2016 @</p>
+        </div>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        
+        var vid = document.getElementById("vid");
+        
+        
+        
+     vid.addEventListener("canplay", function(){
+        setTimeout(function(){
+            vid.play();
+            vid.controls = true;
+        }, 5000);
+        /* THis code delays the video by 10 seconds, autoplays it and gives the person the ability to control it*/
+     });   
+    });
+</script>
+
+
+
+
+</body>
+<html>
