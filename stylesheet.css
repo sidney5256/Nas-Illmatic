@@ -1,0 +1,40 @@
+html, body{
+    
+    margin: 0;
+    height: 100%;
+    background: black;
+    
+}
+ 
+
+
+vid{
+ 
+    width:100%;
+    height:100%;
+
+    /*This allows for the poster attribute to stretch the picture wides*/
+
+ 
+}
+
+.divider{
+    height: 50%;
+    width: 100%;
+    background-color: white;
+   
+}
+
+.sect{
+    height: 100%;
+    background-color: black;
+    background-attachment: fixed;
+    
+    
+}
+
+.secOne{
+    background-image: url("henny.jpg");
+    background-position: center;
+    background-size: cover;  
+}
